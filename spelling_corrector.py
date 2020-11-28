@@ -155,8 +155,6 @@ def generateCandidates(query,dictionary):
         return all(w in dictionary for w in q.split())
     #############################################################################
     ### Начало на Вашия код. На мястото на pass се очакват 10-15 реда
-    if allWordsInDictionary(query):
-        return [(query, 0.0)]
     edits = generateEdits(query)
     return set([(candidate, -editWeight(query, candidate))
                 for edit in edits for candidate in generateEdits(edit)
