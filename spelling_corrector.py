@@ -63,9 +63,6 @@ def editWeight(s1, s2):
 
     return matrix[-1, -1]
 
-    ### Край на Вашия код
-    #############################################################################
-
 ###returns list of generated edits of some given query with caluclated Levenshtein-Demerau distance equal to one (dist == 1) 
 ###the function uses the alphabet given in in package model
 def generateEdits(q):
