@@ -43,7 +43,7 @@ def operationWeight(a, b):
     else:
         print("Wrong parameters ({},{}) of primitiveWeight call encountered!".format(a,b))
 
-###returns the cost of all operation required to change one word into the other using the operationWeight function
+###returns the cost of all operations required to change one word into the other using the operationWeight function
 def editWeight(s1, s2):
     row_size = len(s1) + 1
     col_size = len(s2) + 1
